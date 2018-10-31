@@ -1,0 +1,33 @@
+TensorFlow:  1.13
+Model:       alexnet
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.FORWARD_ONLY
+SingleSess:  False
+Batch size:  128 global
+             64.0 per device
+Num batches: 100
+Num epochs:  0.01
+Devices:     ['/gpu:0', '/gpu:1']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 3560.9 +/- 0.0 (jitter = 0.0)	0.000	0.000	0.000
+10	images/sec: 3488.5 +/- 80.7 (jitter = 157.0)	0.000	0.000	0.000
+20	images/sec: 3546.8 +/- 61.5 (jitter = 322.8)	0.000	0.000	0.000
+30	images/sec: 3604.2 +/- 47.7 (jitter = 288.8)	0.000	0.000	0.000
+40	images/sec: 3663.5 +/- 42.4 (jitter = 287.4)	0.000	0.008	0.008
+50	images/sec: 3692.2 +/- 35.5 (jitter = 271.3)	0.000	0.000	0.000
+60	images/sec: 3707.2 +/- 30.6 (jitter = 265.9)	0.000	0.008	0.016
+70	images/sec: 3732.3 +/- 27.5 (jitter = 266.8)	0.000	0.000	0.000
+80	images/sec: 3748.4 +/- 24.9 (jitter = 214.8)	0.000	0.000	0.016
+90	images/sec: 3761.3 +/- 23.7 (jitter = 211.4)	0.000	0.000	0.000
+100	images/sec: 3774.3 +/- 22.0 (jitter = 208.5)	0.000	0.000	0.000
+----------------------------------------------------------------
+total images/sec: 3763.11
+----------------------------------------------------------------

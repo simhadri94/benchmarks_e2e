@@ -1,0 +1,33 @@
+TensorFlow:  1.13
+Model:       vgg16
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.FORWARD_ONLY
+SingleSess:  False
+Batch size:  512 global
+             256.0 per device
+Num batches: 100
+Num epochs:  0.04
+Devices:     ['/gpu:0', '/gpu:1']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 480.7 +/- 0.0 (jitter = 0.0)	0.000	0.000	0.002
+10	images/sec: 764.5 +/- 32.6 (jitter = 9.2)	0.000	0.002	0.004
+20	images/sec: 790.7 +/- 17.1 (jitter = 7.4)	0.000	0.000	0.014
+30	images/sec: 795.7 +/- 12.8 (jitter = 6.1)	0.000	0.000	0.002
+40	images/sec: 802.8 +/- 9.8 (jitter = 6.1)	0.000	0.002	0.002
+50	images/sec: 806.8 +/- 7.9 (jitter = 5.4)	0.000	0.002	0.004
+60	images/sec: 805.5 +/- 7.1 (jitter = 5.1)	0.000	0.000	0.004
+70	images/sec: 808.5 +/- 6.1 (jitter = 5.0)	0.000	0.002	0.006
+80	images/sec: 808.1 +/- 5.8 (jitter = 4.8)	0.000	0.000	0.010
+90	images/sec: 809.8 +/- 5.2 (jitter = 4.8)	0.000	0.002	0.006
+100	images/sec: 810.7 +/- 4.7 (jitter = 5.3)	0.000	0.000	0.002
+----------------------------------------------------------------
+total images/sec: 810.49
+----------------------------------------------------------------

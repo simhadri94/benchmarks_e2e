@@ -1,0 +1,17 @@
+TensorFlow:  1.13
+Model:       inception3
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.FORWARD_ONLY
+SingleSess:  False
+Batch size:  712 global
+             712.0 per device
+Num batches: 100
+Num epochs:  0.06
+Devices:     ['/gpu:0']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up

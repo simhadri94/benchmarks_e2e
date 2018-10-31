@@ -1,0 +1,17 @@
+TensorFlow:  1.13
+Model:       vgg16
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.FORWARD_ONLY
+SingleSess:  False
+Batch size:  1280 global
+             640.0 per device
+Num batches: 100
+Num epochs:  0.10
+Devices:     ['/gpu:0', '/gpu:1']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up

@@ -1,0 +1,33 @@
+TensorFlow:  1.13
+Model:       inception3
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.FORWARD_ONLY
+SingleSess:  False
+Batch size:  1024 global
+             512.0 per device
+Num batches: 100
+Num epochs:  0.08
+Devices:     ['/gpu:0', '/gpu:1']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 980.5 +/- 0.0 (jitter = 0.0)	0.000	0.000	0.005
+10	images/sec: 954.8 +/- 15.4 (jitter = 77.8)	0.000	0.001	0.004
+20	images/sec: 934.2 +/- 13.8 (jitter = 81.8)	0.000	0.000	0.006
+30	images/sec: 950.5 +/- 11.4 (jitter = 43.0)	0.000	0.000	0.004
+40	images/sec: 947.1 +/- 9.9 (jitter = 47.7)	0.000	0.000	0.004
+50	images/sec: 938.4 +/- 9.5 (jitter = 66.0)	0.000	0.001	0.008
+60	images/sec: 936.6 +/- 8.5 (jitter = 66.0)	0.000	0.002	0.005
+70	images/sec: 908.8 +/- 11.9 (jitter = 75.2)	0.000	0.002	0.006
+80	images/sec: 910.3 +/- 10.6 (jitter = 78.0)	0.000	0.000	0.003
+90	images/sec: 904.5 +/- 9.8 (jitter = 92.6)	0.000	0.001	0.010
+100	images/sec: 905.4 +/- 9.0 (jitter = 90.8)	0.000	0.000	0.003
+----------------------------------------------------------------
+total images/sec: 905.28
+----------------------------------------------------------------

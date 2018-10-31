@@ -1,0 +1,33 @@
+TensorFlow:  1.13
+Model:       resnet50
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.FORWARD_ONLY
+SingleSess:  False
+Batch size:  1024 global
+             512.0 per device
+Num batches: 100
+Num epochs:  0.08
+Devices:     ['/gpu:0', '/gpu:1']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 1339.9 +/- 0.0 (jitter = 0.0)	0.000	0.000	0.003
+10	images/sec: 1365.0 +/- 18.0 (jitter = 31.7)	0.000	0.002	0.006
+20	images/sec: 1331.0 +/- 25.3 (jitter = 36.2)	0.000	0.001	0.005
+30	images/sec: 1355.4 +/- 18.5 (jitter = 68.1)	0.000	0.001	0.005
+40	images/sec: 1359.7 +/- 14.5 (jitter = 66.8)	0.000	0.000	0.007
+50	images/sec: 1363.7 +/- 12.0 (jitter = 74.9)	0.000	0.001	0.005
+60	images/sec: 1365.2 +/- 10.4 (jitter = 75.2)	0.000	0.000	0.004
+70	images/sec: 1370.1 +/- 9.2 (jitter = 75.6)	0.000	0.001	0.005
+80	images/sec: 1370.5 +/- 8.1 (jitter = 73.0)	0.000	0.001	0.008
+90	images/sec: 1370.6 +/- 7.6 (jitter = 78.1)	0.000	0.000	0.004
+100	images/sec: 1370.4 +/- 7.0 (jitter = 77.0)	0.000	0.000	0.004
+----------------------------------------------------------------
+total images/sec: 1370.16
+----------------------------------------------------------------
